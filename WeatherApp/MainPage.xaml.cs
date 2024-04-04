@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using WeatherApp.Model;
-using WinRT;
+
 
 namespace WeatherApp
 {

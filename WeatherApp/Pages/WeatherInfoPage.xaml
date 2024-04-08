@@ -21,7 +21,7 @@
             <!--First 3 blocks -->
             <Frame Grid.Column="0">
                 <VerticalStackLayout>
-                    <Label Text="{Binding GetLatestFeelLike}" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold" TextColor="#606cf2"/>
+                    <Label Text="{Binding GetLatestFeelLike}" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" TextColor="#606cf2"/>
                     <Label Text="Feels Like" HorizontalOptions="Center"/>
                 </VerticalStackLayout>
             </Frame>
@@ -30,14 +30,14 @@
                 <VerticalStackLayout>
                     <Image Source="wind.png" WidthRequest="50" HeightRequest="50"/>
                     <Label Text="Wind" HorizontalOptions="Center"/>
-                    <Label Text="40km/h" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold" TextColor="#606cf2"/>
+                    <Label Text="40km/h" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" TextColor="#606cf2"/>
                 </VerticalStackLayout>
             </Frame>
             <Frame Grid.Column="2">
                 <VerticalStackLayout>
                     <Image Source="humidity.png" WidthRequest="50" HeightRequest="50"/>
                     <Label Text="Humidity" HorizontalOptions="Center"/>
-                    <Label Text="{Binding LatestHumid}" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold" TextColor="#606cf2"/>
+                    <Label Text="{Binding LatestHumid}" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" TextColor="#606cf2"/>
                 </VerticalStackLayout>
             </Frame>
 

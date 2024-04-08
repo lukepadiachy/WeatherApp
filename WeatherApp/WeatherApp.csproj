@@ -57,9 +57,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\background.jpg" />
 	  <None Remove="Resources\Images\cloud.png" />
 	  <None Remove="Resources\Images\humidity.png" />
-	  <None Remove="Resources\Images\weather.jpg" />
+	  <None Remove="Resources\Images\weathericon.png" />
 	  <None Remove="Resources\Images\wind.png" />
 	</ItemGroup>
 

@@ -6,10 +6,10 @@
              BackgroundColor="#606cf2">
     <VerticalStackLayout>
         
-        <Image WidthRequest="100" HeightRequest="100" />
-        <Label HorizontalOptions="Center" FontSize="70" TextColor="White" Text="20°C"/>
-        <Label HorizontalOptions="Center" FontSize="25" FontAttributes="Bold" TextColor="White" Text="Raining"/>
-        <Label HorizontalOptions="Center" FontSize="15" FontAttributes="Bold" TextColor="White" Text="South Africa, CPT"/>
+        <Image WidthRequest="100" HeightRequest="100"/>
+        <Label HorizontalOptions="Center" FontSize="70" TextColor="White" Text="{Binding main.temp}"/>
+        <Label HorizontalOptions="Center" FontSize="25" FontAttributes="Bold" TextColor="White" Text="{Binding weather.description}" />
+        <Label HorizontalOptions="Center" FontSize="15" FontAttributes="Bold" TextColor="White" Text="{Binding sys.country}"/>
 
         <Grid Margin="20" ColumnSpacing="5">
             <Grid.ColumnDefinitions>
@@ -21,22 +21,23 @@
             <!--First 3 blocks -->
             <Frame Grid.Column="0">
                 <VerticalStackLayout>
-                    <Label Text="20" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" TextColor="#606cf2"/>
-                    <Label Text="Feels Like" HorizontalOptions="Center"/>
+                    <Image Source="cloud.png" WidthRequest="50" HeightRequest="50"/>
+                    <Label Text="{Binding clouds.all , StringFormat='{}{0} %'}" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" TextColor="#606cf2"/>
+                    <Label Text="Cloud Coverage" HorizontalOptions="Center"/>
                 </VerticalStackLayout>
             </Frame>
 
             <Frame Grid.Column="1">
                 <VerticalStackLayout>
                     <Image Source="wind.png" WidthRequest="50" HeightRequest="50"/>
-                    <Label Text="Wind" HorizontalOptions="Center"/>
+                    <Label Text="{Binding wind.speed , StringFormat='{}{0} m/s'}" HorizontalOptions="Center"/>
                     <Label Text="40km/h" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" TextColor="#606cf2"/>
                 </VerticalStackLayout>
             </Frame>
             <Frame Grid.Column="2">
                 <VerticalStackLayout>
                     <Image Source="humidity.png" WidthRequest="50" HeightRequest="50"/>
-                    <Label Text="Humidity" HorizontalOptions="Center"/>
+                    <Label Text="{Binding main.humidity, StringFormat='{}{0} %'}" HorizontalOptions="Center"/>
                     <Label Text="60" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" TextColor="#606cf2"/>
                 </VerticalStackLayout>
             </Frame>

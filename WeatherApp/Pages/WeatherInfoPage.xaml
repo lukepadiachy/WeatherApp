@@ -7,7 +7,7 @@
     <VerticalStackLayout>
         
         <Image WidthRequest="200" HeightRequest="200" Source="weathericon.png"/>
-        <Label HorizontalOptions="Center" FontSize="60" TextColor="White" Text="{Binding main.temp, StringFormat='{0}°C'}"/>
+        <Label HorizontalOptions="Center" FontSize="60" TextColor="White" Text="{Binding main.temp, StringFormat='{0:F0}°C'}"/>
         <Label HorizontalOptions="Center" FontSize="25" FontAttributes="Bold" TextColor="White" Text="Cape Town" />
         <Label HorizontalOptions="Center" FontSize="15" FontAttributes="Bold" TextColor="White" Text="{Binding sys.country}"/>
 
@@ -31,7 +31,7 @@
                 <VerticalStackLayout>
                     <Image Source="wind.png" WidthRequest="50" HeightRequest="50"/>
                     <Label Text="Wind" HorizontalOptions="Center"/>
-                    <Label Text="{Binding wind.speed , StringFormat='{}{0} m/s'}" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" TextColor="#606cf2"/>
+                    <Label Text="{Binding wind.speed , StringFormat='{}{0} km/h'}" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" TextColor="#606cf2"/>
                 </VerticalStackLayout>
             </Frame>
             <Frame Grid.Column="2" BackgroundColor="Black">
